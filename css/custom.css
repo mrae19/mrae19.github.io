@@ -1,0 +1,502 @@
+
+h1,
+h2,
+h3,
+.font-title-bold,
+article.page .entry-title,
+article.page a.readmore,
+.fw-block-info .info-heading,
+.fw-block-info .info-text a,
+.textblock-shortcode .text-link a,
+.textblock-shortcode .text-heading,
+.timeline > li > .timeline-panel h4,
+.timelines-navigation a,
+.fw_form_fw_form,
+.fw_form_fw_form input[type='submit'],
+.tweet-entry .tw-head .tw-user h3,
+.tweet-entry .tw-head .tw-follow a,
+.fw-testimonials-item .fw-testimonials-author .author-name,
+.ht-online-gallery .follow-link a,
+.apimap_form,
+.apimap_form input[type='submit'],
+.registration-wrapper .price-table .price-items .entry .features .feature-price strong,
+.registration-wrapper .register-form-name,
+.registration-wrapper .price-table-name,
+.event-register-form,
+.event-register-form input[type='submit'],
+.event-register-form select[type='submit'],
+.event-register-form span.price-display[type='submit'],
+.ht-btn-wrapper .fw-btn,
+.fw-btn,
+.page-banner h2.header-title,
+.main-navigation li,
+footer,
+.widget-title,
+.widget_categories .cat-item,
+.widget_mailchimp_form button,
+.widget_recent_posts_thumb .recent-post-entry .post-title,
+article.post .entry-title,
+article.post a.readmore,
+article.post .entry-content.quote .quote-au,
+.post-paging .page-numbers,
+.post-author .au-name,
+.comment-list .block-1 .reply,
+.comment-list .block-1 cite,
+#commentform,
+#commentform input#submit,
+.comments-title {
+    font-family: Roboto Bold;
+    font-weight: ;
+}
+/*Body font*/
+
+.font-body,
+article.page .entry-content,
+.textblock-shortcode,
+.fw-testimonials-item,
+.ht-meta-block p,
+.countdown-wrapper .event-content,
+.registration-wrapper .price-table .price-items .entry .features,
+.registration-wrapper .price-table .price-desc,
+.widget-area,
+article.post .entry-content,
+article.post .entry-meta,
+.comment-list .block-2,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Droid;
+    font-weight: ;
+}
+.fw-testimonials-item .fw-testimonials-text {
+    font-family: Droid !important;
+    font-weight: ;
+}
+/*Heading font*/
+
+h1,
+.fw-special-title {
+/*    font-size: 30px;*/
+}
+h2,
+.font-size-h2,
+.apimap_form .map-form-title,
+.event-register-form h3.form-title,
+.page-banner h2.header-title {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h5 {
+    font-size: 14px;
+}
+
+/* Primary color */
+
+.bg-color-primary,
+article.page .post-cates a,
+.countdown-wrapper p.event-badge,
+.widget-title::before,
+.widget_mailchimp_form button,
+article.post .post-cates a,
+.post-paging .page-numbers,
+#commentform input#submit,
+.timeline-badge.warning,
+.main-navigation ul ul,
+.timeline > li:hover .timeline-badge,
+.ht-btn-wrapper .fw-btn.fw-btn-1,
+.fw-btn.fw-btn-1 {
+    background-color: #FFC723;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFC723;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #FFC723;
+    opacity: 0.5;
+}
+Mozilla based browsers::-moz-selection {
+    background-color: #FFC723;
+}
+Works in Safari::selection {
+    background-color: #FFC723;
+}
+#back-to-top,
+.color-primary,
+article.page .entry-content a .tweet-entry .tw-body a:hover,
+.ht-carousel.speakers .slider-inner .speaker-social a:hover,
+.registration-wrapper .price-table .price-desc a,
+.dl-menuwrapper .current_page_item > a,
+.dl-menuwrapper .current-menu-item > a,
+.dl-menuwrapper .current_page_ancestor > a,
+.dl-menuwrapper .current-menu-parent > a,
+.widget_recent_entries a,
+.widget_rss ul a,
+.widget_recent_comments ul a,
+article.post .entry-content a,
+article.post .sticky-gim,
+.post-paging .page-numbers:hover,
+.post-paging .page-numbers.current,
+#commentform input#submit:hover,
+.single .meta.meta-social a.sd-button:hover::before,
+section.fw-main-row .flexslider a.flex-next,
+section.fw-main-row .flexslider a.flex-prev,
+.fw-block-info .info-text a:hover,
+.timeline > li > .timeline-panel h4.timeline-place,
+social-link a:hover {
+    color: #FFC723;
+}
+.timeline > li:hover .timeline-badge,
+.timeline > li > .timeline-badge,
+label span.check-checkbox.active::before,
+.ht-meta-block,
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td,
+article.post .sticky-gim,
+.registration-wrapper .price-table .price-items .entry.current .features .feature-price {
+    border-color: #FFC723;
+}
+.blog-navigation.sc.sticky .main-navigation.sc {
+    box-shadow: 1px 0px 5px 0px #FFC723;
+}
+/* Secondary color */
+
+.color-second,
+a:hover,
+article.page a:hover,
+.tweet-entry .tw-body a,
+.current_page_ancestor > a,
+.current-menu-parent > a,
+.widget-area aside.widget a:hover,
+.widget_rss ul a:hover,
+.widget_recent_comments ul a:hover,
+.widget_mailchimp_form .desctiption a,
+.widget_recent_posts_thumb .recent-post-entry:hover h4,
+article.post a:hover,
+#back-to-top:hover,
+.info-text:hover,
+.text-link:hover,
+{
+    color: #e7b740;
+}
+.ht-carousel.speakers .owl-nav > div {
+    background-color: #e7b740;
+}
+.ht-carousel.speakers .slider-inner::before {
+    background-color: #e7b740;
+    opacity: 0;
+}
+.ht-carousel.speakers .owl-nav > div:hover {
+    background-color: #e7b740;
+    opacity: 0.5;
+}
+.ht-carousel.speakers .slider-inner:hover::before {
+    background-color: #e7b740;
+    opacity: 0.3;
+}
+.widget_tag_cloud a:hover {
+    border-color: #e7b740;
+}
+.timelines-navigation a:hover,
+.timelines-navigation a.active {
+    background-color: #FFC723;
+    opacity: 1;
+}
+/* Heading color */
+
+.color-heading,
+article.page .entry-title,
+.fw-block-info .info-heading,
+.textblock-shortcode .text-heading,
+.timelines-navigation a,
+.tweet-entry .tw-head .tw-user h3,
+.fw-testimonials-item .fw-testimonials-author .author-name,
+.ht-meta-block p,
+.ht-online-gallery .follow-link a,
+.apimap_form .direction-label,
+.countdown-wrapper p.event-badge,
+.registration-wrapper .price-table .price-items .entry .features .feature-price strong,
+.event-register-form,
+.event-register-form select[type='submit'],
+.event-register-form span.price-display[type='submit'],
+.fw-heading .fw-special-title,
+.fw-heading .fw-special-subtitle_2,
+.widget-title,
+.widget_categories .cat-item,
+.widget_recent_posts_thumb .recent-post-entry .post-title,
+article.post .entry-title,
+.post-author .au-name,
+.comment-list .block-1 .reply,
+.comment-list .block-1 cite,
+#commentform,
+.comments-title {
+    color: #404040;
+}
+.textblock-shortcode .text-link a {
+    color: #404040 !important;
+}
+/* Body Color */
+
+body,
+.fw-testimonials .fw-testimonials-text,
+.accordion-content,
+.color-body,
+article.page .entry-content,
+.timeline > li > .timeline-panel h4,
+.fw_form_fw_form sup,
+.tweet-entry .tw-head .tw-user p,
+.fw-testimonials-item,
+.ht-accordion .accordion-title,
+.ht-accordion .accordion-content,
+.ht-meta-block p span,
+.apimap_form .c-enter input,
+.registration-wrapper .price-table .price-items .entry .features,
+.registration-wrapper .price-table,
+footer,
+footer .social-link a::before,
+.widget-area,
+article.post .entry-content,
+article.post .entry-meta,
+.post-author .au-social,
+.comment-list .block-2,
+.single .meta.meta-social a.sd-button::before,
+.event-register-form .mail-chimp span.desc {
+    color: #727272;
+}
+.recentcomments a{
+    display:inline !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+
+
+.fw-main-row-bg.skrollable.skrollable-between {
+background-image: url(../images/bg/brand2.jpg);
+}
+
+.fw-main-row{
+    color:#ffffff;padding-top:0px;padding-bottom:0px;margin-top:0px;margin-bottom:0px;
+}
+
+
+#home{
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.desc p span{
+    font-size: 30px;
+    font-family: 'Roboto Bold';
+    color: #040404;}
+
+
+
+.ht_countdown_section{
+    text-align: left!important;
+}
+
+.slide-desc2 p span{
+    font-family: Droid Italic;
+    font-size: 18px;
+}
+
+
+.embed-responsive{
+    margin-bottom: 1px;
+}
+
+
+
+.textblock-shortcode p{
+    text-align: center;
+}
+
+
+.textblock-shortcode p span{
+    font-family: Droid Italic;
+    font-size: 24px;
+    text-align: center;
+    padding-right: 50px;
+    line-height: 36px;
+}
+
+.black04{
+    color: #040404;
+}
+
+
+.black40{
+    color: #404040;
+}
+
+.black00{
+    color: #000;
+    background: #000;
+}
+
+.color-orange{
+    color: #ef6715!important;
+}
+
+.color-blue{
+    color: #0e7ac6!important;
+}
+.color-pink{
+    color: #FFC723!important;
+}
+.color-grey{
+    color: #727272!important;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+.droid-font{
+    font-family: Droid;
+}
+
+.font-14px{
+    font-size: 14px;
+}
+
+.padding-zero{
+    padding: 0px!important;
+}
+
+#speakers{
+    padding: 0px!important;
+}
+
+
+
+.our-speaker{
+    padding-left: 60px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.our-speaker span{
+    font-size: 32px;
+    font-family: Roboto Bold;
+}
+
+.padding-left-60px{
+    padding-left: 60px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.padding-top43px{
+    padding-top: 43px;
+}
+.padding-top60px{
+    padding-top: 60px;
+}
+.padding-top63px{
+    padding-top: 63px;
+}
+.padding-top10px{
+    padding-top: 10px;
+}
+
+.event-scheadule h3{
+    text-align: center;
+}
+
+.event-scheadule h3 span{
+    font-family: 'Roboto Bold';
+    font-size: 30px;
+    color: #040404;
+}
+
+.text-head{
+   color: #000000;
+    font-family: 'Roboto Bold';
+}
+
+.text-desc{
+   font-size: 14px;
+    font-family: Droid;
+    color: #707070;
+}
+.fw-main-row-007{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+.sponsor-text-007{
+	font-size: 24px;
+	font-family: Droid Italic;
+	color: #ededed;
+}
+.textblock-shortcode-009{
+	color:#fff !important;
+}
+.textblock-shortcode{
+	color:#727272;
+}
+.textblock-shortcode p{
+	text-align:left;
+}
+.tw-footer-007,
+.tw-body-1{
+	color:#727272;
+}
+.textblock-shortcode-001 > p{
+	text-align:center !important;
+}
+#home_parallax{
+	color:#ffffff;
+	background-color:rgba(0,0,0,0.14);
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.value{
+    padding-left: 20px !important;
+}
+.background-video{
+    color:#ffffff;
+    background-color:rgba(0,0,0,0.56);
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.form-submit {
+    margin-top: 75px;
+}
+.text-shortcode-2015{
+	margin: 50px 0px;
+	padding-left:35px;
+	text-align:center !important;
+}
+.tw-body{
+	color:#555;
+}
+.tw-footer{
+	color:#777;
+}
+.field-text {
+    padding: 10px 0 !important;
+}
