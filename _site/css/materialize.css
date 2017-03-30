@@ -3,6 +3,45 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+ /** Temporary Styling **/
+.welcome-card {
+  background-color: white;
+  box-shadow: 0px 2px 4px #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  font-size: 14px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #868686;
+}
+
+.welcome-container {
+  padding-top: 200px;
+}
+
+.welcome-photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: url("/images/mattraeprofile.jpg");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.welcome-cta {
+  color: #128edb;
+  margin: 0 auto;
+  text-align: center;
+}
+/**End Temporary Style**/
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2159,6 +2198,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: #f5f5f5;
 }
 
 /* HTML5 display definitions
@@ -8870,3 +8910,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+
+
+
