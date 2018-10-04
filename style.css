@@ -1736,7 +1736,7 @@ textarea {
 body {
   margin: 0;
   background-color: #010B14;
-  background-image: url('file:///Users/mrae/Personal/GitHub/mrae19.github.io/assets/media/mountain-bg.jpg');
+  background-image: url('/assets/media/mountain-bg.jpg');
   background-position: top;
   background-size: 100%;
   overflow-x: hidden;
@@ -1760,12 +1760,12 @@ img {
 }
 
 .section--first {
-  padding-top: 168px;
+  padding-top: 40px;
 }
 
 @media (min-height: 800px) {
   .section--first {
-    padding-top: 288px;
+    padding-top: 100px;
   }
 }
 
@@ -3166,7 +3166,7 @@ a.dashed {
   padding-top: 24px;
   padding-bottom: 24px;
   transition: background-color .4s ease-out, box-shadow .4s ease-out;
-  background-color: transparent;
+  background-color: #010B14;
   will-change: box-shadow;
 }
 
@@ -3507,7 +3507,7 @@ input,
 select,
 textarea {
   color: #FAFAFF;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
