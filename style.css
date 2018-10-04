@@ -3601,21 +3601,22 @@ p {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   margin: 24px 0 12px;
-  font-size: 42px;
+  font-size: 80px;
   line-height: 48px;
   letter-spacing: -0.02em;
 }
 
 @media (min-width: 992px) {
   .display-one {
-    font-size: 112px;
+    font-size: 70px;
     line-height: 120px;
     letter-spacing: -0.04em;
   }
 }
 
 a {
-  color: #D7263D;
+  color: #81ceff;
+  font-weight: 600;
   text-decoration: none;
   transition: color .4s .1s ease-out;
 }
@@ -3637,9 +3638,15 @@ a:focus {
   text-transform: uppercase;
 }
 
+.role-sub {color: #d7263d !important;}
+
 .btn a,
 .sub-head a {
   color: inherit;
+}
+
+a.btn.btn--primary.contact-btn {
+  margin: 4px;
 }
 
 .sub-head,
@@ -3908,7 +3915,7 @@ div.mce_inline_error {
 
 .btn--primary, .btn--primary:hover, .btn--primary:focus, .btn--primary:active {
   color: #FFFBFA;
-  background-color: #D7263D;
+  background-color: #010B14;
 }
 
 .btn--secondary, .btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active {
@@ -4688,6 +4695,10 @@ div.mce_inline_error {
 
 /*Logo Styling*/
 .otto {width: 80% !important;}
+
+.logo_contain {
+  margin-top: 30px;
+}
 
 /* Media query
    ========================================================================== */
