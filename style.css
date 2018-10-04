@@ -1736,7 +1736,8 @@ textarea {
 body {
   margin: 0;
   background-color: #010B14;
-  background-image: url('mrae19.github.io/assets/media/mountain-bg.jpg');
+  /*background-image: url('mrae19.github.io/assets/media/mountain-bg.jpg');*/
+  background-image: url('file:///Users/mrae/Personal/GitHub/mrae19.github.io/assets/media/mountain-bg.jpg');
   background-position: top;
   background-size: 100%;
   overflow-x: hidden;
@@ -1918,7 +1919,7 @@ a.dashed {
 .company figure:before {
   content: '';
   display: block;
-  padding-top: 105%;
+  padding-top:65%;
 }
 
 .company figure .lazyload--el {
@@ -1926,9 +1927,9 @@ a.dashed {
   display: block;
   top: 50%;
   left: 50%;
-  width: auto;
+  width: 100%;
   max-width: none;
-  height: 50%;
+  /*height: 50%;*/
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
 }
@@ -4684,6 +4685,9 @@ div.mce_inline_error {
   clip: auto;
 }
 
+
+/*Logo Styling*/
+.otto {width: 80% !important;}
 
 /* Media query
    ========================================================================== */
