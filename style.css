@@ -1738,6 +1738,7 @@ body {
   background-color: #010B14;
   background-image: url('mrae19.github.io/assets/media/mountain-bg.jpg');
   background-position: top;
+  background-repeat: no-repeat;
   background-size: 100%;
   overflow-x: hidden;
 }
