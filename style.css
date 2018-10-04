@@ -1736,8 +1736,7 @@ textarea {
 body {
   margin: 0;
   background-color: #010B14;
-  /*background-image: url('mrae19.github.io/assets/media/mountain-bg.jpg');*/
-  background-image: url('file:///Users/mrae/Personal/GitHub/mrae19.github.io/assets/media/mountain-bg.jpg');
+  background-image: url('mrae19.github.io/assets/media/mountain-bg.jpg');
   background-position: top;
   background-size: 100%;
   overflow-x: hidden;
@@ -3601,7 +3600,7 @@ p {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   margin: 24px 0 12px;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 48px;
   letter-spacing: -0.02em;
 }
@@ -3609,7 +3608,7 @@ p {
 @media (min-width: 992px) {
   .display-one {
     font-size: 70px;
-    line-height: 120px;
+    line-height: 80px;
     letter-spacing: -0.04em;
   }
 }
@@ -3647,6 +3646,16 @@ a:focus {
 
 a.btn.btn--primary.contact-btn {
   margin: 4px;
+}
+
+@media (max-width: 524px) {
+  a.btn.btn--primary.contact-btn {
+    width: 100%;
+  }
+
+  .cta {
+    padding: 20px;
+  }
 }
 
 .sub-head,
