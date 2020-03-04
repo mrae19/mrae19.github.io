@@ -4702,6 +4702,42 @@ div.mce_inline_error {
   clip: auto;
 }
 
+.article {
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	border-radius: 8px;
+	margin-left: 20px;
+	margin-bottom: 34px;
+}
+
+.post-content {
+	float: left;
+	padding: 10px 20px;
+}
+
+.label {font-size: 12px;}
+.label-profile {color: #81ceff;}
+.label-talk {color: #d7263d;}
+.label-article {color: #ff017e;}
+.title {
+	color: white;
+}
+
+.post-image {
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 8px 0px 0px 8px;
+	height: 100px;
+	float: left;
+}
+
+.collab-post {background-image: url('https://images.squarespace-cdn.com/content/v1/5c7300cdc46f6d147ea52314/1583282562414-6SL1RYJWIJ1XYWF597WN/ke17ZwdGBToddI8pDm48kE7xzgWkeVHhMSpwGz7q3y4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2du1iGr6rVFVouDCrC-EYDz_rjS4LofYkqCp0pRSzPi5Jm7cT0R_dexc_UL_zbpz6JQ/image001.jpg?format=1500w');}
+.heuristic-post {background-image: url('https://lh3.googleusercontent.com/ymSqgVgj-NpeHPQPDWq_3affS1LI6SElBJNaGPxrEYFsEJ4LwXlOJaxH6HIGLVuTTutT6qGeYCXFW8_OmBvCFBC6kshs561XNAahoWCncsGrECMhJNwCjilRxJGYRo47JVeqmogf');}
+.terminal-post {background-image: url('https://api.terminal.io/wp-content/uploads/Rae.jpg'); background-position: center -20px; background-size: 100%;}
+.terminal-talk {background-image: url('https://instagram.fybz1-1.fna.fbcdn.net/v/t51.2885-15/e35/82370785_2489364507999215_8992609181586947913_n.jpg?_nc_ht=instagram.fybz1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=qwwqm_Ul8t0AX_BEkaW&oh=541bd0bbfd9bf50b0a6a0492559c3840&oe=5E905B19'); background-size: 100%;}
 
 /*Logo Styling*/
 .otto {width: 80% !important;}
@@ -4712,3 +4748,37 @@ div.mce_inline_error {
 
 /* Media query
    ========================================================================== */
+@media (max-width: 680px) {
+	.posts-content {margin-top: 40px;}
+  .article {
+	height: 150px;
+	width: 100%;
+	background-color: black;
+	border-radius: 8px;
+	margin-left: 0px;
+	margin-bottom: 34px;
+	}
+
+	.post-content {
+		float: left;
+		padding: 10px 20px;
+	}
+
+	.label {font-size: 12px;}
+	.label-profile {color: #81ceff;}
+	.label-talk {color: #d7263d;}
+	.label-article {color: #ff017e;}
+	.title {
+		color: white;
+	}
+
+	.post-image {
+		background-color: black;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 8px 0px 0px 8px;
+		height: 150px;
+		float: left;
+	}
+}
