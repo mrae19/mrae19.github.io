@@ -4709,10 +4709,23 @@ div.mce_inline_error {
 	border-radius: 8px;
 	margin-left: 20px;
 	margin-bottom: 34px;
+  transition: background-color 0.2s;
+}
+
+.article:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.article:hover .title, .article:hover .label {
+  color: black;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .post-content {
 	float: left;
+  color: white;
 	padding: 10px 20px;
 }
 
