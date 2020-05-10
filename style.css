@@ -1761,7 +1761,8 @@ img {
 }
 
 .section--first {
-  padding-top: 40px;
+  padding-top: 140px;
+  padding-bottom: 110px;
 }
 
 .content-section {
@@ -1775,8 +1776,9 @@ img {
 
 @media (min-height: 800px) {
   .section--first {
-    padding-top: 100px;
-  }
+  	padding-top: 140px;
+  	padding-bottom: 110px;
+	}
 }
 
 .section--last {
@@ -3141,12 +3143,14 @@ a.dashed {
 .site-branding svg,
 .site-branding img {
   display: block;
-  height: 40px;
+  height: 60px;
   width: auto;
   max-width: none;
   margin: 0 auto;
   margin-top: 10px;
   pointer-events: none;
+  border-radius: 100px;
+  border: 4px solid white;
 }
 
 .site-branding:after {
@@ -3285,6 +3289,26 @@ a.dashed {
   will-change: transform;
 }
 
+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D7263D;
+  pointer-events: none;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform;
+}
+
 .site-header__nav ul > li > a:hover:after {
   -webkit-transform-origin: left center;
           transform-origin: left center;
@@ -3347,7 +3371,7 @@ a.dashed {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: #FFFBFA;
+  background-color: #000000;
   box-shadow: 8px 0 24px rgba(34, 34, 34, 0.24);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
@@ -3371,7 +3395,7 @@ a.dashed {
 
 .site-sidenav__branding {
   padding: 24px;
-  border-bottom: solid 1px #EFF0F1;
+  /*border-bottom: solid 1px #EFF0F1;*/
 }
 
 .site-sidenav__nav {
@@ -3491,7 +3515,7 @@ a.dashed {
 
 .widget_socials__list {
   margin-bottom: 24px;
-  float: right;
+  /*float: right;*/
 }
 
 .widget_socials__list:after {
@@ -3551,7 +3575,7 @@ h6 span {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.02em;
 }
@@ -3607,17 +3631,18 @@ p {
 
 .display-one {
   clear: both;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: cubano, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 24px 0 12px;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 48px;
   letter-spacing: -0.02em;
 }
 
 @media (min-width: 992px) {
   .display-one {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 80px;
     letter-spacing: -0.04em;
   }
@@ -3625,7 +3650,7 @@ p {
 
 a {
   color: #81ceff;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   transition: color .4s .1s ease-out;
 }
@@ -4740,7 +4765,7 @@ div.mce_inline_error {
 	padding: 10px 20px;
 }
 
-.label {font-size: 12px;}
+.label {font-size: 12px; font-weight:800;}
 .label-profile {color: #81ceff;}
 .label-talk {color: #d7263d;}
 .label-article {color: #ff017e;}
@@ -4767,8 +4792,8 @@ div.mce_inline_error {
 .golden-ratio {background-image: url('https://xd.adobe.com/ideas/wp-content/uploads/2020/02/the-Ggolden-ratio-how-why-to-use-it-in-design.jpg.webp');}
 .collab-post {background-image: url('https://images.squarespace-cdn.com/content/v1/5c7300cdc46f6d147ea52314/1583282562414-6SL1RYJWIJ1XYWF597WN/ke17ZwdGBToddI8pDm48kE7xzgWkeVHhMSpwGz7q3y4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2du1iGr6rVFVouDCrC-EYDz_rjS4LofYkqCp0pRSzPi5Jm7cT0R_dexc_UL_zbpz6JQ/image001.jpg?format=1500w');}
 .heuristic-post {background-image: url('https://lh3.googleusercontent.com/ymSqgVgj-NpeHPQPDWq_3affS1LI6SElBJNaGPxrEYFsEJ4LwXlOJaxH6HIGLVuTTutT6qGeYCXFW8_OmBvCFBC6kshs561XNAahoWCncsGrECMhJNwCjilRxJGYRo47JVeqmogf');}
-.terminal-post {background-image: url('https://api.terminal.io/wp-content/uploads/Rae.jpg'); background-position: center -20px; background-size: 100%;}
-.terminal-talk {background-image: url('https://instagram.fybz1-1.fna.fbcdn.net/v/t51.2885-15/e35/82370785_2489364507999215_8992609181586947913_n.jpg?_nc_ht=instagram.fybz1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=qwwqm_Ul8t0AX_BEkaW&oh=541bd0bbfd9bf50b0a6a0492559c3840&oe=5E905B19'); background-size: 100%;}
+.terminal-post {background-image: url('assets/media/mattrae.png'); background-position: center -20px; background-size: 100%;}
+.terminal-talk {background-image: url('assets/media/terminal-rae.png'); background-size: cover;}
 
 /*Logo Styling*/
 .otto {width: 80% !important;}
