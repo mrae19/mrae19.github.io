@@ -4959,6 +4959,10 @@ div.mce_inline_error {
   .profile-image {
     margin-top:100px;
   }
+
+  .article-card {
+    height: 300px;
+  }
 }
 
 
