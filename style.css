@@ -4944,9 +4944,7 @@ div.mce_inline_error {
 	.label-profile {color: #81ceff;}
 	.label-talk {color: #d7263d;}
 	.label-article {color: #ff017e;}
-	.title {
-		color: white;
-	}
+	
 
 	.post-image {
 		background-color: black;
@@ -4957,7 +4955,13 @@ div.mce_inline_error {
 		height: 150px;
 		float: left;
 	}
+
+  .profile-image {
+    margin-top:100px;
+  }
 }
+
+
 
 .width1200 {
   max-width: 1200px;
