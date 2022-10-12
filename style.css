@@ -4922,6 +4922,10 @@ div.mce_inline_error {
   margin-top: 30px;
 }
 
+.photocard {
+  margin-bottom: 40px;
+}
+
 /* Media query
    ========================================================================== */
 @media (max-width: 680px) {
