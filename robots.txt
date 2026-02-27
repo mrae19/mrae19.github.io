@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Allow AI/LLM crawlers (GPTBot, ChatGPT-User, Google-Extended, anthropic-ai, Claude-Web, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Disallow template/example pages in doob folder
+Disallow: /doob/
+
+# Sitemap location
+Sitemap: https://mattrae.ca/sitemap.xml

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matt Rae — Resume</title>
+  <style>
+    :root {
+      --forest: #103427;
+      --forest-light: #1a4d3a;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --border: #e0e0e0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+      color: var(--text);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 48px 48px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @media print {
+      body { padding: 24px 32px; }
+      .no-print { display: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+    h1 {
+      font-size: 24pt;
+      font-weight: 700;
+      margin: 0 0 4px;
+      color: var(--forest);
+      letter-spacing: -0.5px;
+    }
+    .tagline {
+      font-size: 12pt;
+      color: var(--text-muted);
+      margin: 0 0 16px;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      font-size: 10pt;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .contact a { color: var(--forest); }
+    h2 {
+      font-size: 11pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--forest);
+      margin: 24px 0 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    .job {
+      margin-bottom: 20px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .job-title { font-weight: 600; font-size: 11pt; }
+    .job-company { color: var(--forest); }
+    .job-date {
+      font-size: 10pt;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .job-desc {
+      margin-top: 6px;
+      color: var(--text);
+      font-size: 10.5pt;
+    }
+    .job-desc ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+    .job-desc li { margin-bottom: 2px; }
+    .education-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .edu-degree { font-weight: 600; }
+    .edu-school { color: var(--forest); }
+    .edu-date { font-size: 10pt; color: var(--text-muted); }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 10.5pt;
+    }
+    .skills span {
+      padding: 2px 0;
+      border-bottom: 1px dotted var(--border);
+    }
+    .stats {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+      font-size: 10pt;
+      color: var(--text-muted);
+    }
+    .stats strong { color: var(--text); }
+    .print-hint {
+      font-size: 10pt;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      padding: 12px 16px;
+      background: #f8f8f8;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint no-print">Print this page (Cmd/Ctrl + P) and choose "Save as PDF" for a clean resume.</p>
+
+  <h1>Matt Rae</h1>
+  <p class="tagline">Senior Product Manager at Adobe — AI & Agents, Imaging & Creative Technology</p>
+  <div class="contact">
+    <span>Kingston, ON, Canada</span>
+    <a href="mailto:matt@mattrae.ca">matt@mattrae.ca</a>
+    <a href="https://mattrae.ca">mattrae.ca</a>
+    <a href="https://linkedin.com/in/mattrae">linkedin.com/in/mattrae</a>
+  </div>
+
+  <p class="job-desc" style="margin-bottom: 20px;">
+    Product Manager with 10+ years shipping software for creatives and enterprises. Currently driving AI & agentic product strategy at Adobe Lightroom. Background in UX, design tools, and cross-functional execution. Strong fit for AI/ML product roles in creator tools, SaaS, and B2B.
+  </p>
+
+  <div class="stats">
+    <span><strong>10+</strong> years in product</span>
+    <span><strong>AI & agentic</strong> product experience</span>
+    <span><strong>50+</strong> talks & workshops</span>
+    <span><strong>8</strong> companies</span>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Senior Product Manager — Agentic Workstream, Lightroom</span>
+      <span class="job-date">Oct 2023 — Present</span>
+    </div>
+    <div class="job-company">Adobe</div>
+    <div class="job-desc">
+      <ul>
+        <li>Product owner and strategic driver for AI & agentic capabilities across the Lightroom ecosystem; led organizational alignment on agentic AI direction within a large, established creative software team — defining product direction for hobbyists, professionals, and creators</li>
+        <li>Leading first LLM-powered feature to ship in the Lightroom ecosystem, reaching <strong>12 million users</strong>; informed by strong qualitative and quantitative research signal</li>
+        <li>Ran a technical validation test ("Dynamic Sky") to ship the first LLM feature concept — achieved <strong>20% adoption rate</strong> before intentionally deprecating to inform a broader platform strategy</li>
+        <li>Partnered with the Sr. Director of Engineering to establish a dedicated agentic engineering team; work closely with senior and principal engineers to align technical architecture with product vision</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Senior Product Manager — Community Advocacy (Lightroom & Photoshop)</span>
+      <span class="job-date">Nov 2022 — Nov 2023</span>
+    </div>
+    <div class="job-company">Adobe</div>
+    <div class="job-desc">
+      Owned community engagement and product feedback for imaging products. Guided adoption of AI-powered workflows; created educational content and feedback channels to inform product and AI feature development.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Senior Product Manager — Design Advocacy (XD)</span>
+      <span class="job-date">Jan 2022 — Dec 2022</span>
+    </div>
+    <div class="job-company">Adobe</div>
+    <div class="job-desc">
+      Led product and community strategy for Adobe XD. Built learning hubs, tutorials, and developer/designer handoff workflows.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Designer Advocate & Content Creator — Adobe XD</span>
+      <span class="job-date">Apr 2020 — Jan 2022</span>
+    </div>
+    <div class="job-company">Adobe</div>
+    <div class="job-desc">
+      <ul>
+        <li>Engaged design communities globally; shared best practices and Adobe XD workflows</li>
+        <li>Created tutorials, articles, and workshops for Adobe.com and Adobe XD Ideas</li>
+        <li>Inaugural Adobe XDI (XD Instructor) for the Americas</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Product Designer</span>
+      <span class="job-date">Nov 2019 — Apr 2020</span>
+    </div>
+    <div class="job-company">Zenreach</div>
+    <div class="job-desc">
+      Product design for walkthrough attribution and offline-to-online marketing analytics. Bridged digital ad performance with in-store foot traffic.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">UX Designer</span>
+      <span class="job-date">Aug 2017 — Oct 2019</span>
+    </div>
+    <div class="job-company">Clearpath Inc. (OTTO Motors)</div>
+    <div class="job-desc">
+      UX for autonomous systems and human–robot interaction. Defined interaction patterns and monitoring UIs for AI-driven industrial automation.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Product Lead / Lead UX Designer</span>
+      <span class="job-date">Feb 2015 — Jul 2017</span>
+    </div>
+    <div class="job-company">Chalk.com</div>
+    <div class="job-desc">
+      Led the product and design team — setting product vision, aligning engineering and design, and shipping a curriculum development and distribution tool to school boards across North America, Europe, and Asia.
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Co-founder & UX Designer</span>
+      <span class="job-date">Nov 2012 — May 2014</span>
+    </div>
+    <div class="job-company">Tripzaar</div>
+    <div class="job-desc">
+      Co-founded travel marketplace; owned product and design. Defined design language and UX for web and mobile.
+    </div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="education-row">
+    <span><span class="edu-degree">BSc</span> — Ergonomics & Human Factors</span>
+    <span class="edu-date">2008 — 2013</span>
+  </div>
+  <div class="edu-school">University of Waterloo, ON</div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>AI Product Management</span>
+    <span>Agentic AI</span>
+    <span>Generative AI</span>
+    <span>Product Strategy</span>
+    <span>User Research</span>
+    <span>Cross-functional Leadership</span>
+    <span>UX/UI Design</span>
+    <span>Adobe Creative Cloud</span>
+    <span>Creator Tools</span>
+    <span>Go-to-Market</span>
+    <span>Community & Advocacy</span>
+  </div>
+
+  <h2>Speaking & Published Work</h2>
+  <div class="job-desc">
+    <ul>
+      <li>"How to Use Heuristic Evaluations to Improve Product Designs" included in UX course curriculum at <strong>Toronto Metropolitan University</strong></li>
+      <li>Published on Adobe.com, Adobe XD Ideas, Medium (Thinking Design); work cited in academic papers and industry toolkits</li>
+      <li>50+ talks and workshops at DesignThinkers (RGD), UX Writer Conference, General Assembly, Calgary UX, Terminal, and others</li>
+      <li>Inaugural Adobe XDI — sole certified Adobe XD Instructor in Canada</li>
+      <li>General Assembly instructor: <a href="https://generalassemb.ly/instructors/matt-rae/23633">Wireframing in Adobe XD</a></li>
+    </ul>
+  </div>
+</body>
+</html>

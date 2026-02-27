@@ -1015,6 +1015,21 @@
 
     // Setup "lazy source"
     setTimeout(pixudio_lazysource, 0);
+
+    // Header scrolled state (solid background / shadow when past top)
+    (function() {
+      var header = doc.querySelector('.refresh-header');
+      if (!header) return;
+      function onScroll() {
+        if (win.scrollY > 8) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      }
+      win.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
   }
 
   /*
