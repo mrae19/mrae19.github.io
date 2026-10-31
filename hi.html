@@ -49,6 +49,25 @@
       content: ""; position: absolute; inset: auto 0 0 0; height: 24%; pointer-events: none;
       background: linear-gradient(to top, var(--bg), transparent);
     }
+    .video-card {
+      position: absolute; right: .75rem; bottom: .75rem; z-index: 1;
+      display: flex; align-items: center; gap: .6rem; max-width: calc(100% - 1.5rem);
+      padding: .4rem .8rem .4rem .4rem; border-radius: 14px;
+      color: #fff; text-decoration: none; text-align: left;
+      font: 500 .8rem/1.25 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, rgba(255,255,255,.2), rgba(20,20,20,.34));
+      -webkit-backdrop-filter: blur(14px) saturate(170%); backdrop-filter: blur(14px) saturate(170%);
+      border: 1px solid rgba(255,255,255,.34);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 8px 24px rgba(0,0,0,.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,.45);
+    }
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+      .video-card { background: rgba(20,20,20,.78); }
+    }
+    .video-card:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+    .video-thumb { position: relative; flex: none; width: 64px; height: 36px; border-radius: 9px; overflow: hidden; }
+    .banner .video-thumb img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
+    .video-thumb svg { position: absolute; inset: 0; margin: auto; width: 16px; height: 16px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
     .wrap {
       max-width: 440px; margin: 0 auto;
       padding: 1rem 1.25rem calc(2rem + env(safe-area-inset-bottom));
@@ -89,6 +108,13 @@
 <body>
   <div class="banner">
     <img src="/assets/hi-banner.webp" width="790" height="593" alt="Matt Rae speaking into a microphone on stage" fetchpriority="high" />
+    <a class="video-card" href="https://www.youtube.com/watch?v=PDUCwtpSQnQ" target="_blank" rel="noopener" aria-label="View my latest tutorial on YouTube: What's New in Lightroom's April Release, in 90 Seconds">
+      <span class="video-thumb">
+        <img src="/assets/hi-video-thumb.webp" width="192" height="108" alt="" loading="lazy" />
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+      <span>View my latest<br>tutorial</span>
+    </a>
   </div>
   <main class="wrap">
     <header class="id">
