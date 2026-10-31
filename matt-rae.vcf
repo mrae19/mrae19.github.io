@@ -2,8 +2,9 @@ BEGIN:VCARD
 VERSION:3.0
 N:Rae;Matt;;;
 FN:Matt Rae
-TITLE:Designer\, photographer\, and product manager
-EMAIL;TYPE=INTERNET,WORK:matt@mattrae.ca
+TITLE:Product Manager - Adobe Lightroom
+EMAIL;TYPE=INTERNET,HOME,PREF:matt@mattrae.ca
+EMAIL;TYPE=INTERNET,WORK:matthewrae@adobe.com
 URL:https://mattrae.ca
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/mattrae/
 URL;TYPE=Instagram:https://www.instagram.com/heymattrae/

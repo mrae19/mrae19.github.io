@@ -14,7 +14,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Matt Rae — Connect" />
   <meta property="og:description" content="Save my contact, find me on LinkedIn and Instagram." />
-  <meta property="og:image" content="https://mattrae.ca/assets/portrait-sm.jpg" />
+  <meta property="og:image" content="https://mattrae.ca/assets/hi-banner.jpg" />
   <meta property="og:url" content="https://mattrae.ca/hi" />
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -43,15 +43,17 @@
       font: 16px/1.5 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
       -webkit-tap-highlight-color: transparent;
     }
+    .banner { position: relative; max-width: 480px; margin: 0 auto; }
+    .banner img { display: block; width: 100%; height: auto; aspect-ratio: 790 / 593; object-fit: cover; background: var(--line); }
+    .banner::after {
+      content: ""; position: absolute; inset: auto 0 0 0; height: 24%; pointer-events: none;
+      background: linear-gradient(to top, var(--bg), transparent);
+    }
     .wrap {
       max-width: 440px; margin: 0 auto;
-      padding: calc(2.25rem + env(safe-area-inset-top)) 1.25rem calc(2rem + env(safe-area-inset-bottom));
+      padding: 1rem 1.25rem calc(2rem + env(safe-area-inset-bottom));
     }
     .id { text-align: center; }
-    .avatar {
-      width: 112px; height: 112px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.1rem;
-      background: var(--line);
-    }
     .hello { margin: 0 0 .25rem; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
     h1 { margin: 0; font: 700 1.9rem/1.15 'Archivo', system-ui, sans-serif; letter-spacing: -0.01em; }
     .tag { margin: .55rem 0 0; color: var(--text); font-size: 1rem; }
@@ -85,9 +87,11 @@
   </style>
 </head>
 <body>
+  <div class="banner">
+    <img src="/assets/hi-banner.webp" width="790" height="593" alt="Matt Rae speaking into a microphone on stage" fetchpriority="high" />
+  </div>
   <main class="wrap">
     <header class="id">
-      <img class="avatar" src="/assets/portrait-sm.jpg" width="112" height="112" alt="Matt Rae" />
       <p class="hello">Nice to meet you</p>
       <h1>Matt Rae</h1>
       <p class="tag">Designer, photographer, and product manager.</p>
