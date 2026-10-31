@@ -1,0 +1,58 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/design-talks.html",
+      "destination": "/speaker",
+      "permanent": true
+    },
+    {
+      "source": "/design-talks",
+      "destination": "/speaker",
+      "permanent": true
+    },
+    {
+      "source": "/advisory",
+      "destination": "/work-with-me",
+      "permanent": true
+    },
+    {
+      "source": "/advisory/clarity",
+      "destination": "/work-with-me",
+      "permanent": true
+    },
+    {
+      "source": "/content.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/content",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/blog/feed.xml",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

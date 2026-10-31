@@ -1,0 +1,172 @@
+/* ============================================================
+   SITE THEME — mattrae.ca
+   A deliberate monochrome re-skin of Studio Kit: modern,
+   black-and-white, high-end photography-portfolio feel.
+   Sharp corners, hairline rules, no drop shadows, uppercase
+   tracked micro-labels.
+
+   Load order (every page):
+     tokens.css -> base.css -> components.css -> theme.css
+   Fonts: Archivo (headings) + Inter (body). Keep the <head>
+   font <link> in step with these two families.
+   ALT DIRECTION: swap --font-head to a serif display
+   ('Fraunces' / 'Newsreader') for a warmer editorial look.
+   ============================================================ */
+
+:root {
+  /* Brand — near-black. There is no hue anywhere in this theme. */
+  --brand:        #111111;
+  --brand-dark:   #000000;
+  --brand-light:  #333333;   /* accents on dark backgrounds */
+  --brand-pale:   #f0f0f0;   /* hover backgrounds, icon chips */
+
+  /* "Accent" — kept monochrome so eyebrows / rules / CTAs read black */
+  --accent:       #111111;
+  --accent-dark:  #3a3a3a;   /* hover */
+  --accent-pale:  #f4f4f4;
+
+  /* Neutrals */
+  --cream:        #f7f7f7;   /* off-white section background */
+  --cream-dark:   #ececec;   /* image placeholder / deeper neutral */
+  --topbar-bg:    #0a0a0a;
+  --footer-bg:    #0a0a0a;
+  --text:         #111111;
+  --text-mid:     #4a4a4a;
+  --text-light:   #8a8a8a;
+  --border:       #e2e2e2;
+
+  /* Type */
+  --font-head:    'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Shape — sharp */
+  --radius:       0px;
+  --radius-sm:    0px;
+  --radius-lg:    0px;
+
+  /* Shadows — none. Depth comes from hairlines. */
+  --shadow-sm:    0 0 0 1px var(--border);
+  --shadow-md:    0 0 0 1px #111;
+  --shadow-lg:    0 0 0 1px #111;
+}
+
+/* ============================================================
+   MONOCHROME RE-SKIN — brand-level styling overrides.
+   Reused across pages on purpose; this is the re-skin layer,
+   not one-off page CSS.
+   ============================================================ */
+
+/* Headings: tighter, a little lighter than the kit default */
+.section-title, .page-hero h1, .hero h1, .cta-banner h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+.hero h1 em { font-style: italic; color: inherit; }
+
+/* Micro-labels — uppercase, wide tracking, ink-black */
+.section-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Hero eyebrow: drop the pill, make it a plain tracked label */
+.hero-eyebrow {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.66rem;
+}
+
+/* Nav — uppercase, tracked, small */
+.nav-links a {
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.nav-links a:hover, .nav-links a.active { background: none; text-decoration: underline; text-underline-offset: 5px; }
+.nav-logo-text { font-family: var(--font-head); font-weight: 700; letter-spacing: 0.02em; }
+/* compact dropdown items read as a sub-level: normal case, no underline-on-hover */
+.nav-dropdown--compact a { text-transform: none; letter-spacing: 0.01em; font-size: 0.82rem; }
+.nav-dropdown--compact a:hover, .nav-dropdown--compact a.active { text-decoration: none; background: var(--brand-pale); }
+@media (max-width: 768px) { .nav-dropdown--compact a { font-size: 0.95rem; } }
+
+/* Logo mark — "M + maple leaf". Black SVG; invert it on the dark footer. */
+.nav-logo-img { height: 26px; }
+.footer-logo-img { height: 26px; opacity: 0.9; filter: invert(1); }
+
+/* Buttons — sharp rectangles, uppercase, no lift */
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 1rem 1.9rem;
+  border-width: 1px;
+}
+.btn:hover { transform: none !important; box-shadow: none !important; }
+.btn-primary { background: var(--text); border-color: var(--text); }
+.btn-primary:hover { background: #000; border-color: #000; }
+.btn-navy { background: var(--text); border-color: var(--text); }
+.btn-navy:hover { background: #000; border-color: #000; }
+.btn-outline { border-color: var(--text); }
+.nav-links .nav-cta { background: var(--text); text-transform: uppercase; letter-spacing: 0.13em; font-size: 0.7rem; }
+.nav-links .nav-cta:hover { background: #000 !important; }
+
+/* Cards — hairline box, no radius, no lift; keep a thin ink rule on top */
+.feature-card { border-color: var(--border); }
+.feature-card:hover { transform: none; box-shadow: none; border-color: var(--text); }
+.feature-card::before { background: var(--text); height: 2px; }
+.feature-card-icon { background: var(--brand-pale); }
+a.feature-card .card-link { color: var(--text); }
+
+/* Dark panels — flat black, no gradient */
+.page-hero, .cta-banner { background: #0a0a0a; }
+.trust-bar { background: #0a0a0a; }
+.trust-item-icon svg { color: #fff; }
+
+/* Hero slides: the first slide is a real <img> (so the browser can treat it as the
+   LCP image and prioritise it); the rest are CSS backgrounds set by kit.js from data-bg. */
+.hero-slide > img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
+/* Hero on mobile — the carousel sits ABOVE the text as its own strip,
+   instead of faded behind it (the kit default) or scrimmed under it (this
+   site's old approach) — either way the photo used to get lost. */
+@media (max-width: 768px) {
+  .hero { display: block; min-height: 0; }
+  .hero-bg {
+    position: relative; height: clamp(260px, 68vw, 400px);
+    opacity: 1; -webkit-mask-image: none; mask-image: none;
+  }
+  .hero-bg::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(to top, #fff 0%, rgba(255,255,255,0) 55%);
+  }
+  .hero-content { position: relative; padding: 1.75rem 1.25rem 3rem; }
+}
+
+/* Section tints kept very subtle */
+.section--pale { background: var(--cream); }
+
+/* Photo grid — dense, quiet hover */
+.photo-grid { gap: 4px; }
+.photo-grid a:hover img, .photo-grid figure:hover img { transform: none; opacity: 0.82; }
+.photo-grid img { transition: opacity 0.3s ease; }
+
+/* Article prose links: underline only, ink-black */
+.article-prose a, .detail-prose a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.article-prose a:hover, .detail-prose a:hover { color: var(--text-light); }
+
+/* Footer: personal site has no "Hours" column — drop the empty
+   placeholder cell and let the rest breathe. */
+.footer-col:empty { display: none; }
+.footer-grid { grid-template-columns: 2fr 1fr 1.4fr; }
+@media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px)  { .footer-grid { grid-template-columns: 1fr; } }

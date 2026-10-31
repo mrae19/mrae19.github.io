@@ -1,0 +1,50 @@
+/* ============================================================
+   STUDIO KIT — tokens.css
+   The design contract. Every custom property the kit reads,
+   with neutral defaults.
+
+   DO NOT edit values here per-project. Override in
+   /site/theme.css instead — that file is the entire rebrand.
+   ============================================================ */
+
+:root {
+  /* --- Brand ------------------------------------------------ */
+  --brand:        #24324d;   /* primary brand colour */
+  --brand-dark:   #172033;   /* darker shade — gradients, hovers */
+  --brand-light:  #3a5080;   /* lighter shade — accents on dark */
+  --brand-pale:   #eef1f7;   /* tint — hover backgrounds, icon chips */
+
+  /* --- Accent (CTAs, links, highlights) -------------------- */
+  --accent:       #c9943a;   /* primary action colour */
+  --accent-dark:  #a87a2e;   /* accent hover */
+  --accent-pale:  #fdf6ec;   /* accent tint */
+
+  /* --- Neutrals ------------------------------------------- */
+  --cream:        #f8f7f5;   /* off-white section background */
+  --cream-dark:   #edeae4;   /* image placeholder / deeper neutral */
+  --topbar-bg:    #0f1626;   /* utility bar background */
+  --footer-bg:    #0f1626;   /* footer background */
+  --text:         #1a1a1a;   /* body text */
+  --text-mid:     #3d3d3d;   /* secondary text */
+  --text-light:   #6b7280;   /* muted text, captions */
+  --white:        #ffffff;
+  --border:       #e2e0db;   /* hairlines, card borders */
+
+  /* --- Type ---------------------------------------------- */
+  --font-head:    'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* --- Layout ------------------------------------------- */
+  --max-width:    1180px;
+  --section-pad:  5rem 1.5rem;   /* narrowed to 3.5rem 1.25rem under 768px */
+  --nav-height:   70px;
+  --radius:       12px;
+  --radius-sm:    6px;
+  --radius-lg:    20px;
+
+  /* --- Shadows ------------------------------------------ */
+  --shadow-sm:    0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md:    0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg:    0 20px 60px rgba(0,0,0,0.15);
+}
